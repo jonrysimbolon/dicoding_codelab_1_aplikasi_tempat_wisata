@@ -82,6 +82,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
                                 height: 150,
                                 padding: const EdgeInsets.only(bottom: 16),
                                 child: ListView(
+                                  controller: _scrollController,
                                   scrollDirection: Axis.horizontal,
                                   children: widget.place.imageUrls.map((url) {
                                     return Padding(
